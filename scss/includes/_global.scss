@@ -1,0 +1,432 @@
+@import "includes/variables";
+@import "includes/mixins";
+
+body, html {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: normal;
+    color: $gray;
+}
+
+.no-boxshadow {
+    input:invalid, textarea:invalid {}
+}
+
+/* By default the selection color is pink */
+
+::-moz-selection, ::selection {
+    background: $dark_blue;
+    color: #fff;
+    text-shadow: none;
+}
+
+.ie7 img {
+    -ms-interpolation-mode: bicubic;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+    	list-style: none;
+    }
+}
+
+p {
+	line-height: 1;
+	font-size: 16px;
+	color: $gray;
+}
+
+a {
+    cursor: pointer;
+    color: $dark_blue;
+    text-decoration: none;
+
+    p & {
+        color: $gray;
+    }
+}
+
+article {
+    blockquote {
+        border-left: 1px solid #ebe0b5;
+        color: $gray;
+        padding: 15px 0 15px 30px;
+        margin: 5px 0 10px 30px;
+    }
+
+    ul {
+        margin-left: 20px;
+
+        li {
+            padding: 5px;
+            list-style: square;
+            color: $dark_blue;
+        }
+    }
+
+    ol {
+        margin-left: 20px;
+
+        li {
+            padding: 5px;
+            list-style-type: decimal;
+            color: $dark_blue;
+        }
+    }
+}
+
+:focus {
+    outline: 0;
+}
+
+img, 
+a img {
+    display: block;
+    height: auto;
+	max-width: 100%;
+    border: 0;
+}
+
+/* Float Definitions -----------------------------------------------------------*/
+
+.clear {
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 2px 7px;
+}
+
+.alignleft {
+    float: left;
+    margin: 0 7px 2px 0;
+}
+
+img {
+    &.left, &.alignleft {
+        float: left;
+        margin: 0 15px 7px 0;
+    }
+
+    &.right, &.alignright {
+        float: right;
+        margin: 0 0 7px 15px;
+    }
+}
+
+.post img.aligncenter, .attachment img.aligncenter {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nopad {
+    padding: 0px !important;
+}
+
+.nomargin {
+    margin: 0px !important;
+}
+
+.noborder {
+    border: none !important;
+}
+
+.mobile {
+    display: none;
+}
+
+.visuallyhidden { 
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height: 1px; width: 1px; 
+	margin: -1px; padding: 0; border: 0; 
+}
+
+.flex {
+	display: flex;
+}
+
+.button {
+	&__solid {
+		background-color: $dark_blue;
+		color: #fff;
+		font-size: 16px;
+		padding: 7px 35px;
+
+		@include transition( color .4s ease, background-color .4s ease );
+		@include border-radius(50px);
+
+		&:hover {
+			background-color: #fff;
+			color: $dark_blue;
+		}
+	}
+
+	&__outlined {
+		background-color: transparent;
+		color: $dark_blue;
+		font-size: 16px;
+		padding: 7px 35px;
+		border: 1px solid $dark_blue;
+
+		@include transition( color .4s ease, background-color .4s ease, border-color .4s ease );
+		@include border-radius(50px);
+
+		&:hover {
+			background-color: $dark_blue;
+			color: #fff;
+			border-color: $dark_blue;
+		}
+	}
+
+	&__plain {
+		background-color: transparent;
+		font-size: 16px;
+		padding: 7px 0;
+		border-bottom: 2px solid #fff;
+
+		@include transition( opacity .4s ease );
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+
+	&__with-icon {
+		background-color: transparent;
+		color: $dark_blue;
+		font-size: 16px;
+
+		&--icon {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 15px;
+		}
+
+		&--text {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 20px;
+			font-weight: 600;
+			word-spacing: 3px;
+		}
+
+		&.light {
+			.button__with-icon--icon {
+				margin-right: 5px;
+			}
+
+			.button__with-icon--text {
+				color: #758aaf;
+				font-weight: bold;
+			}
+		}
+	}
+
+	&.big {
+		padding: 15px 40px;
+	}
+
+	&.small {
+		padding: 7px 35px;		
+	}
+
+	&.bold {
+		font-weight: bold;
+	}
+
+	&.medium {
+		font-weight: 600;
+	}
+
+	&.thin {
+		font-weight: 300;
+	}
+
+	&.light {
+		color: #fff;
+	}
+
+	&.dark {
+		color: $dark_blue;
+	}
+}
+
+h2 {
+	&.section-title {
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 1.2;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+}
+
+.hamburger {
+    padding: 0;
+    cursor: pointer;
+    transition-property: opacity, -webkit-filter;
+    transition-property: opacity, filter;
+    transition-property: opacity, filter, -webkit-filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+    position: absolute;
+	top: 33%;
+	right: 5%;
+	z-index: 10;
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    &--spin {
+	    .hamburger-inner {
+	        transition-duration: 0.3s;
+	        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+	        &::before {
+	            @include transition(top 0.1s 0.34s ease-in, opacity 0.1s ease-in);
+	        }
+
+	        &::after {
+	            @include transition(0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19));
+	        }
+
+	        .hasScrolled & {
+	            background-color: $dark_blue;
+	            &::before,
+	            &::after {
+	                background-color: $dark_blue;
+	            }
+	        }
+	    }
+
+	    &.is-active {
+		    .hamburger-inner {
+		        transition-delay: 0.14s;
+		        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		        @include transform(rotate(225deg));
+
+		        &::before {
+		            top: 0;
+		            opacity: 0;
+		            
+		            @include transition(top 0.1s ease-out, opacity 0.1s 0.14s ease-out);
+		        }
+
+		        &::after {
+		            bottom: 0;
+		           
+		            @include transform(rotate(-90deg));
+		            @include transition(0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1));
+		        }
+		    }
+
+		    .hamburger-inner {
+		    	background-color: #fff;
+
+		    	&::before, &::after {
+		    		background-color: #fff;
+		    	}
+		    }
+		}
+	}
+
+	&-box {
+	    width: 40px;
+	    height: 24px;
+	    display: inline-block;
+	    position: relative;
+	}
+
+	&-inner {
+	    display: block;
+	    top: 59%;
+	    margin-top: -2px;
+	    width: 35px;
+	    height: 1px;
+	    background-color: $dark_blue;
+	    border-radius: 0px;
+	    position: absolute;
+	    transition-property: -webkit-transform;
+	    transition-property: transform;
+	    transition-property: transform, -webkit-transform;
+	    transition-duration: 0.5s;
+	    transition-timing-function: ease;
+
+	    &::before {
+	        width: 35px;
+	        height: 1px;
+	        background-color: $dark_blue;
+	        border-radius: 0px;
+	        position: absolute;
+	        transition-property: -webkit-transform;
+	        transition-property: transform;
+	        transition-property: transform, -webkit-transform;
+	        transition-duration: 0.5s;
+	        transition-timing-function: ease;
+	        content: "";
+	        display: block;
+	        top: -6px;
+	    }
+
+	    &::after {
+	        width: 35px;
+	        height: 1px;
+	        background-color: $dark_blue;
+	        border-radius: 0px;
+	        position: absolute;
+	        transition-property: -webkit-transform;
+	        transition-property: transform;
+	        transition-property: transform, -webkit-transform;
+	        transition-duration: 0.5s;
+	        transition-timing-function: ease;
+	        content: "";
+	        display: block;
+	        bottom: -6px;
+	    }
+	}
+}
+
+.opennav {
+    .hamburger {
+        &:before {
+            background: #000;
+        }
+    }
+    .hamburger-inner {
+        background-color: #000;
+        &::before {
+            background-color: #000;
+        }
+        &::after {
+            background-color: #000;
+        }
+    }
+}

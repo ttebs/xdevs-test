@@ -1,0 +1,46 @@
+.container {
+	max-width: 1040px;
+	position: relative;
+	margin: 0 auto;
+
+	footer & {
+		max-width: 1366px;
+		width: 90%;
+	}
+
+	header &,
+	.banner &,
+	.hero & {
+		max-width: 1100px;
+	}
+
+	&.light {
+		a {
+			@include transition( color .4s ease, background-color .4s ease);
+
+			&:hover {
+				color: $dark_blue;
+			}
+		}
+	}
+
+	&.dark {
+		a {
+			@include transition( color .4s ease, background-color .4s ease);
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+	&.translucent {
+		a:not(.button__solid) {
+			@include transition( opacity .4s ease );
+
+			&:hover {
+				opacity: .6;
+			}
+		}
+	}
+}
