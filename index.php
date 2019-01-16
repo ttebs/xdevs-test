@@ -170,8 +170,197 @@
 						</div>
 					</div>
 				</div>
+				<div class="section-table">
+					<h2>Summary of fare conditions</h2>
+					<p>Note that separate fare rules and conditions apply to your departure flight and arrival flight. The fees for cancellation, booking change and no-show are per passenger. If you change your flight, change fees will be charged on top of any fare difference. Fares are valid only if all flights in your itinerary are completed in sequence.</p>
+					<table>
+						<tr>
+							<th>Fare condition</th>
+							<th>
+								<p>SIN - SFO</p>
+								<p>Economy Super Saver</p>
+							</th>
+							<th>
+								<p>SFO - SIN</p>
+								<p>Economy Lite</p>
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/1-icon.png">
+								<span>Check-in baggage allowance</span>
+							</td>
+							<td>
+								<p class="active">20kg</p>
+							</td>
+							<td>
+								<p class="active">30kg</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/1-icon.png">
+								<span>Advance seat selection</span>
+							</td>
+							<td>
+								<p>Available 48h before flight departs</p>
+							</td>
+							<td>
+								<p class="active">From USD 18</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/1-icon.png">
+								<span>Earn KrisFlyer miles</span>
+							</td>
+							<td>
+								<p class="active">10%</p>
+							</td>
+							<td>
+								<p class="active">50%</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/1-icon.png">
+								<span>Upgrade with miles</span>
+							</td>
+							<td>
+								<p>Not allowed</p>
+							</td>
+							<td>
+								<p>Not allowed</p>
+							</td>
+						</tr>
+						<tr class="diff-rows">
+							<td>
+								<img src="images/1-icon.png">
+								<span>Cancellation</span>
+							</td>
+							<td>
+								<p>Not allowed</p>
+							</td>
+							<td>
+								<p class="active">SGD 300</p>
+							</td>
+						</tr>
+						<tr class="diff-rows">
+							<td>
+								<img src="images/1-icon.png">
+								<span>Booking change</span>
+							</td>
+							<td>
+								<p class="active">SGD 300</p>
+							</td>
+							<td>
+								<p class="active">SGD 200</p>
+							</td>
+						</tr>
+						<tr class="diff-rows">
+							<td>
+								<img src="images/1-icon.png">
+								<span>No show</span>
+							</td>
+							<td>
+								<p>Not allowed</p>
+							</td>
+							<td>
+								<p class="active">SGD 300</p>
+							</td>
+						</tr>
+						<tr class="merge">
+							<td colspan="3">
+								<p>Each of the flight segments you’ve selected come with its own fare conditions. When you mix fare types, whether within the same cabin class or across different cabin classes, fare conditions for cancellation, booking change and no show will follow the more restrictive fare type.</p>
+								<p>Actual fees may vary slightly due to exchange rate fluctuations.</p>
+								<a href="#"> &rsaquo; Full fare rules and conditions </a>
+								<p>This booking is only guaranteed when you receive a confirmation with a booking reference number.</p>
+							</td>
+						</tr>
+					</table>
+					<div class="section-table__btns">
+						<a href="#" class="light">Secure fare</a>
+						<a href="#" class="dark">Proceed</a>
+					</div>
+				</div>
 			</div>
 		</div>
+		<footer>
+			<div class="footer-nav">
+				<div class="footer-nav__item">
+					<h3>Corporate info</h3>
+					<ul>
+						<li>
+							<a href="#">Corporate governance policies</a>
+							<a href="#">Information of investors</a>
+							<a href="#">Invitation to tender</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-nav__item">
+					<h3>Media</h3>
+					<ul>
+						<li>
+							<a href="#">News releases</a>
+							<a href="#">Multimedia library</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-nav__item">
+					<h3>Careers</h3>
+					<ul>
+						<li>
+							<a href="#">Cabin crew</a>
+							<a href="#">Pilots</a>
+							<a href="#">Ground Professionals</a>
+							<a href="#">Scholarship & Internship</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-nav__item">
+					<h3>Support</h3>
+					<ul>
+						<li>
+							<a href="#">Contact us</a>
+							<a href="#">Feedback</a>
+							<a href="#">FAQs</a>
+							<a href="#">Privacy Policy</a>
+							<a href="#">Terms and conditions</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="socials">
+				<div class="socials__left">
+					<div class="socials__item">
+						<ul>
+							<li>Follow</li>
+							<li><img src="images/twitter.png"></li>
+							<li><img src="images/fb.png"></li>
+							<li><img src="images/gplus.png"></li>
+							<li><img src="images/ig.png"></li>
+							<li><img src="images/youtube.png"></li>
+						</ul>
+					</div>
+					<div class="socials__item">
+						<ul>
+							<li><img src="images/mail.png"></li>
+							<li><a href="#">Sign up for our newsletter</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="socials__right">
+					<ul>
+						<li><img src="images/phone.png"></li>
+						<li><a href="#">Learn more about our app</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>© 2019 My Hero Academia Airlines. All Rights Reserved.</p>
+				<img src="images/star.png">
+			</div>
+		</footer>
 		<script defer type="text/javascript" src="js/scripts.js"></script>
 	</body>
 </html>
