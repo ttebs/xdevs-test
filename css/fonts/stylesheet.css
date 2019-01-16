@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Sigvar-Serial';
+    src: url('Sigvar-Serial-Regular.eot');
+    src: url('Sigvar-Serial-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Sigvar-Serial-Regular.woff2') format('woff2'),
+        url('Sigvar-Serial-Regular.woff') format('woff'),
+        url('Sigvar-Serial-Regular.ttf') format('truetype'),
+        url('Sigvar-Serial-Regular.svg#Sigvar-Serial-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baker Signet Std';
+    src: url('BakerSignetStd.eot');
+    src: url('BakerSignetStd.eot?#iefix') format('embedded-opentype'),
+        url('BakerSignetStd.woff2') format('woff2'),
+        url('BakerSignetStd.woff') format('woff'),
+        url('BakerSignetStd.ttf') format('truetype'),
+        url('BakerSignetStd.svg#BakerSignetStd') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
