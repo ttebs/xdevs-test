@@ -46,7 +46,7 @@
 				<span>&#183; 2 Adults, 1 Child</span>
 			</div>
 		</div>
-		<div class="flight-info">
+		<div class="flight-info maxwidth">
 			<div class="flight-info__item">
 				<div class="flight-info__single_container">
 					<h2>Departing</h2>
@@ -97,7 +97,7 @@
 			</div>
 		</div>
 		<div class="body-container">
-			<div class="body-container__max-width">
+			<div class="body-container__max-width maxwidth">
 				<div class="edit-search">
 					<img src="images/upper-design.png">
 					<span>edit search</span>
@@ -286,7 +286,7 @@
 			</div>
 		</div>
 		<footer>
-			<div class="footer-nav">
+			<div class="footer-nav maxwidth">
 				<div class="footer-nav__item">
 					<h3>Corporate info</h3>
 					<ul>
@@ -330,7 +330,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="socials">
+			<div class="socials maxwidth">
 				<div class="socials__left">
 					<div class="socials__item">
 						<ul>
@@ -356,7 +356,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="copyright">
+			<div class="copyright maxwidth">
 				<p>© 2019 My Hero Academia Airlines. All Rights Reserved.</p>
 				<img src="images/star.png">
 			</div>

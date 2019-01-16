@@ -110,7 +110,6 @@
 .flight-info {
     font-size: 0;
     width: 100%;
-    max-width: 1016px;
     margin: 0 auto;
     &__item {
         display: inline-block;
@@ -205,7 +204,6 @@
     padding-bottom: 70px;
     &__max-width {
         width: 100%;
-        max-width: 1016px;
         margin: 0 auto;
         .edit-search {
             text-align: center;
@@ -359,6 +357,7 @@
             top: 10px;
             font-family: 'Proximanova-bold';
             border-radius: 3px;
+            display: inline-block;
         }
     }
 }
@@ -489,7 +488,6 @@ footer {
         width: 100%;
         padding: 33px 0;
         width: 100%;
-        max-width: 1016px;
         margin: 0 auto;
         &__item {
             display: inline-block;
@@ -517,7 +515,6 @@ footer {
     }
     .socials {
         width: 100%;
-        max-width: 1016px;
         margin: 0 auto;
         font-size: 0;
         border-bottom: 1px solid #666;
@@ -578,7 +575,6 @@ footer {
     }
     .copyright {
         width: 100%;
-        max-width: 1016px;
         margin: 0 auto;
         font-size: 0;
         border-bottom: 1px solid #666;

@@ -224,76 +224,13 @@
 
 @media only screen and (max-width: 1023px) {
 
-	body, html, p {
-		font-size: 14px;
+	.header-nav__pagination-container > div,
+	.header-nav__header-text {
+		max-width: 500px;
 	}
 
-	h2 {
-		&.section-title {
-			font-size: 30px;
-			margin-bottom: 35px;
-		}
-	}
-
-	.button {
-		&__solid {
-			font-size: 14px;
-			padding: 5px 25px;
-		}
-
-		&__outlined {
-			font-size: 14px;
-			padding: 5px 25px;
-		}
-
-		&__plain {
-			font-size: 14px;
-			padding: 5px 0;
-		}
-
-		&__with-icon {
-			font-size: 14px;
-
-			&--icon {
-				margin-right: 15px;
-			}
-
-			&--text {
-				font-size: 18px;
-				word-spacing: 2px;
-			}
-
-			&.light {
-				.button__with-icon--icon {
-					margin-right: 4px;
-				}
-			}
-		}
-
-		&.big {
-			padding: 10px 30px;
-		}
-
-		&.small {
-			padding: 5px 25px;		
-		}
-	}
-
-	.features {
-		&__bottom {
-			width: 100%;
-		}
-	}
-
-	.testimonial {
-
-		&__bottom {
-			h3 {
-				font-size: 25px;
-				line-height: 1.5;
-			}
-		}
-
+	.maxwidth {
+	    max-width: 700px;
 	}
 
 }
@@ -321,159 +258,48 @@
 
 @media only screen and (max-width: 767px) {
 
-	h2 {
-		&.section-title {
-			font-size: 25px;
-			margin-bottom: 15px;
-		}
-	}
-
-	.button {
-		&__with-icon.with-mobile {
-			text-align: center;
-
-			.button__with-icon--icon {
-				display: inline-block;
-				margin-bottom: 3%;
-			}
-
-			.button__with-icon--text {
-				width: 100%;
-				display: inline-block;	
-			}
-		}
-	}
-
-	.hero {
-		padding: 7% 0;
-
-		.left {
-			p {
-				font-size: 16px;
-				line-height: 1.4;
-				margin-bottom: 7%;
-			}
-		}
-	}
-
-	.testimonial {
+	.flight-info__single_container {
+		border: none;
 		text-align: center;
-
-		&__bottom {
-			text-align: center;
-
-			h3 {
-				font-size: 20px;
-			}
-		}
 	}
 
-	.article {
-		&__container {
-			&--top {
-				text-align: center;
-
-				h2, p {
-					text-align: left;
-				}
-
-				h2 {
-					font-size: 25px;
-				}
-			}
-
-			&--right {
-				width: 100%;
-				float: none;
-			}
-
-			&--bottom {
-				&::before {
-					display: none;
-				}
-
-				h3 {
-					width: 100%;
-					text-align: center;
-					padding-bottom: 5%;
-					border-bottom: 1px solid $gray;
-				}
-
-				ul {
-					display: block;
-
-					li {
-						text-align: center;
-						display: block;
-						width: 100%;
-						margin-bottom: 10px;
-					}
-				}
-			}
-		}
+	.flight-info__item {
+		width: 100%;
 	}
 
-	.features {
-		&__top {
-			h2 {
-				font-size: 25px;
-			}
-		}
-
-		&__bottom {
-			li {
-				flex: 0 0 100%;
-				margin-bottom: 5%;
-			}
-		}
-
-		.features__container {
-			margin-top: 10%;
-		}
+	.flight-info__item:nth-child(2) {
+		padding-left: 0;
 	}
 
-	.featured {
-
-		.section-title {
-			text-align: center;
-			margin-bottom: 1.5em;
-		}
-
-		&__list {
-			flex-flow: wrap;
-			max-width: 300px;
-			margin: 0 auto;
-
-			li {
-				margin-bottom: 40px;
-				flex: auto;
-			}
-
-		}
-
-		&__list--content {
-			h3 {
-				font-size: 18px;
-			}
-
-			p {
-				font-size: 14px;
-			}
-		}
+	.flight-info__single_container div {
+		width: 100%;
+		text-align: center;
+	}
+	.flights-all-info__width-80,
+	.flights-all-info__width-20 {
+		width: 100%;
 	}
 
-	footer {
-		padding: 9.5% 0 8.5%;
-
-		.social {
-			margin-top: 30px;
-		}
-
-		.copyright {
-			margin-top: 28%;
-		}
+	.flights-all-info__width-20 p {
+		top: 0;
+		margin-top: 20px;
 	}
 
+	.flights-all-info__width-80 .left {
+	    width: 100%;
+	}
+
+	.flights-all-info__width-80 .right {
+		width: 100%;
+		text-align: center;
+	}
+
+	.section-table {
+		width: 100%;
+		max-width: none;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
 }
 
 
