@@ -27,15 +27,43 @@
             left: 0;
             right: 0;
             text-align: center;
+            font-family: 'Proximanova-semibold';
         }
         label {
             position: absolute;
             right: 10px;
             font-size: 12px;
             text-transform: uppercase;
-            color: #00226b;
+            color: #666666;
             width: 100%;
             top: 30px;
+            font-family: 'Proximanova-rg';
+        }
+        &--active {
+            > div {
+                background: #ff9f00;
+                color: #00226b;
+                border: none;
+            }
+            label {
+                color: #00226b;
+            }
+        }
+        &--two {
+            label {
+                right: 22px;
+            }
+        }
+        &--three {
+            label {
+                right: -17px;
+                width: 56px;
+            }
+        }
+        &--fourth {
+            label {
+                right: 12px;
+            }
         }
     }
     &__number-container {
@@ -48,11 +76,9 @@
         position: relative;
         margin: 0;
         font-size: 12px;
-    }
-    &__container--active {
-        background: #ff9f00;
-        color: #00226b;
-        border: none;
+        label {
+            color: #666666;
+        }
     }
 	&__hor-line {
 	    height: 1px;
@@ -63,7 +89,7 @@
     	}
     &__header-text {
     	position: absolute;
-    	bottom: 10px;
+    	bottom: 8px;
     	width: 100%;
     	max-width: 992px;
 	    margin: 0 auto;
@@ -73,11 +99,261 @@
             display: inline-block;
             vertical-align: middle;
             font-size: 16px;
-            text-transform: uppercase;
             color: #fff;
+            font-family: 'Proximanova-semibold';
             img {
                 margin: 0 10px;
             }
+        }
+    }
+}
+.flight-info {
+    font-size: 0;
+    width: 100%;
+    max-width: 1016px;
+    margin: 0 auto;
+    &__item {
+        display: inline-block;
+        width: 33.3333%;
+        position: relative;
+        @include box-sizing(border-box);
+        &:last-child {
+            .flight-info__single_container {
+                border: none;
+                padding-left: 20px;
+                div {
+                    width: 100%;
+                }
+            }
+        }
+        &:nth-child(2) {
+            padding-left: 20px;
+        }
+    }
+    &__single_container {
+        width: 100%;
+        border-right: 1px solid #cccccc;
+        position: relative;
+        @include box-sizing(border-box);
+        div {
+            display: inline-block;
+            width: calc(33.3333% - 20px);
+            vertical-align: middle;
+            position: relative;
+            p {
+                font-family: 'Proximanova-bold';
+                color: #000;
+                margin: 0 0 8px;
+            }
+            img {
+                margin: 0 auto;
+            }
+            .day {
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            .time {
+                font-family: 'Proximanova-semibold';
+                color: #00266b;
+                font-size: 19px;
+                text-transform: uppercase;
+            }
+            .location {
+                font-family: 'Proximanova-bold';
+                color: #333333;
+                font-size: 12px;
+                &--italic {
+                    font-size: 12px;
+                    font-family: 'Proximanova-rg';
+                    color: #000;
+                    font-style: italic;
+                }
+            }
+        }
+        h2 {
+            font-size: 14px;
+            font-family: 'Proximanova-rg';
+            color: #000;
+        }
+        a {
+            position: absolute;
+            top: 0;
+            right: 0;
+            span {
+                font-family: 'Proximanova-rg';
+                color: #0254ec;
+                font-size: 14px;
+                display: inline-block;
+                vertical-align: middle;
+                @include box-sizing(border-box);
+            }
+            img {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 10px;
+                @include box-sizing(border-box);
+            }
+        }
+    }
+}
+.body-container {
+    width: 100%;
+    border-top: 2px solid #333333;
+    &__max-width {
+        width: 100%;
+        max-width: 1016px;
+        margin: 0 auto;
+        .edit-search {
+            text-align: center;
+            position: relative;
+            img {
+                margin: 0 auto;
+            }
+            span {
+                position: absolute;
+                left: 0;
+                right: 0;
+                text-transform: uppercase;
+                font-size: 10px;
+                color: #0254ec;
+                top: 50%;
+                font-family: 'Proximanova-semibold';
+                @include transform(translatey(-50%));
+            }
+        }
+    }
+    .info-with-image {
+        background: #e5e9f0;
+        padding: 18px 32px;
+        margin-top: 20px;
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            @include box-sizing(border-box);
+        }
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            font-family: 'Proximanova-bold';
+            color: #00226b;
+            font-size: 17px;
+            margin-left: 20px;
+            @include box-sizing(border-box);
+        }
+    }
+}
+.flights-all-info {
+    position: relative;
+    font-size: 0;
+    margin-bottom: 30px;
+    h2 {
+        color: #00266b;
+        font-size: 22px;
+        font-family: 'Sigvar-Serial-Regular';
+    }
+    &__container {
+        padding: 25px 20px 18px;
+        border: 1px solid #cccccc;
+        h3 {
+            font-family: 'Proximanova-bold';
+            color: #000;
+            font-size: 13px;
+        }
+        .time {
+            font-size: 24px;
+            font-family: 'BakerSignetStd';
+            color: #00266b;
+            text-transform: uppercase;
+            margin: 0 0 8px;
+        }
+        .location {
+            font-family: 'Proximanova-bold';
+            color: #000;
+            font-size: 13px;
+            margin: 0 0 5px;
+        }
+        .day {
+            font-family: 'Proximanova-rg';
+            color: #666666;
+            font-size: 13px;
+            margin: 0;
+        }
+    }
+    &__width-80 {
+        display: inline-block;
+        width: calc(80% - 20px);
+        vertical-align: top;
+        @include box-sizing(border-box);
+        > div {
+            display: inline-block;
+            vertical-align: top;
+            @include box-sizing(border-box);
+        }
+        .left {
+            width: 60%;
+            div {
+                width: calc(33.3333% - 30px);
+                display: inline-block;
+                vertical-align: top;
+                @include box-sizing(border-box);
+                &:nth-child(2) {
+                    text-align: center;
+                }
+                &:last-child {
+                    padding-left: 30px;
+                }
+                img {
+                    margin-bottom: 5px;
+                }
+                label {
+                    font-family: 'Proximanova-rg';
+                    color: #666666;
+                    font-size: 13px;
+                }
+            }
+        }
+        .right {
+            width: 40%;
+            p {
+                font-family: 'Proximanova-rg';
+                color: #000;
+                font-size: 13px;
+                margin: 0 0 5px;
+            }
+            a {
+                font-family: 'Proximanova-rg';
+                color: #0254ec;
+                font-size: 13px;
+            }
+        }
+    }
+    &__width-20 {
+        display: inline-block;
+        width: calc(20% - 20px);
+        vertical-align: top;
+        text-align: center;
+        @include box-sizing(border-box);
+        p {
+            font-family: 'Proximanova-bold';
+            color: #1c5d49;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin: 0;
+            position: relative;
+            top: -15px;
+            letter-spacing: 1px;
+        }
+        a {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #003087;
+            padding: 12px 35px;
+            background: transparent;
+            border: 1px solid #003087;
+            position: relative;
+            top: 10px;
+            font-family: 'Proximanova-bold';
+            border-radius: 3px;
         }
     }
 }
