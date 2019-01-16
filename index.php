@@ -10,32 +10,41 @@
 
 	<body>
 		<div class="header-nav">
-		<div class="header-nav__pagination-container">
+			<div class="header-nav__pagination-container">
 				<div>
 					<div class="header-nav__hor-line"></div>
 					<div class="header-nav__item">
 						<div class="header-nav__number-container header-nav__container--active">
 							<span>1</span>
 						</div>
+						<label>Flights</label>
 					</div>
 					<div class="header-nav__item">
 						<div class="header-nav__number-container">
 							<span>2</span>
 						</div>
+						<label>Flights</label>
 					</div>
 					<div class="header-nav__item">
 						<div class="header-nav__number-container">
 							<span>3</span>
 						</div>
+						<label>Flights</label>
 					</div>
 					<div class="header-nav__item">
 						<div class="header-nav__number-container">
 							<span>4</span>
 						</div>
+						<label>Flights</label>
 					</div>
 				</div>
 			</div>
-			<p>SIN-SFO SFO-SIN · 2 Adults, 1 Child</p>
+			<div class="header-nav__header-text">
+				<span>SIN-SFO</span>
+				<span><img src="images/header-2-arrows.png"></span>
+				<span>SFO-SIN</span>
+				<span>&#183; 2 Adults, 1 Child</span>
+			</div>
 		</div>
 
 		<script defer type="text/javascript" src="js/scripts.js"></script>
