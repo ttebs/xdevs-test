@@ -122,7 +122,7 @@
 								</div>
 								<div>
 									<p class="time">sin 09:25</p>
-									<p class="location">Singapore</p>
+									<p class="location">San Francisco</p>
 									<p class="day">Fri 12 May</p>
 								</div>
 							</div>
