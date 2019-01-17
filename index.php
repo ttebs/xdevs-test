@@ -198,7 +198,7 @@
 						</tr>
 						<tr>
 							<td>
-								<span><img src="images/1-icon.png"></span>
+								<span><img src="images/2-icon.png"></span>
 								<span>Advance seat selection</span>
 							</td>
 							<td>
@@ -210,7 +210,7 @@
 						</tr>
 						<tr>
 							<td>
-								<span><img src="images/1-icon.png"></span>
+								<span><img src="images/3-icon.png"></span>
 								<span>Earn KrisFlyer miles</span>
 							</td>
 							<td>
@@ -222,7 +222,7 @@
 						</tr>
 						<tr>
 							<td>
-								<span><img src="images/1-icon.png"></span>
+								<span><img src="images/4-icon.png"></span>
 								<span>Upgrade with miles</span>
 							</td>
 							<td>
@@ -234,7 +234,7 @@
 						</tr>
 						<tr class="diff-rows">
 							<td>
-								<span><img src="images/1-icon.png"></span>
+								<span><img src="images/5-icon.png"></span>
 								<span>Cancellation</span>
 							</td>
 							<td>
@@ -246,7 +246,7 @@
 						</tr>
 						<tr class="diff-rows">
 							<td>
-								<span><img src="images/1-icon.png"></span>
+								<span><img src="images/6-icon.png"></span>
 								<span>Booking change</span>
 							</td>
 							<td>
@@ -258,7 +258,7 @@
 						</tr>
 						<tr class="diff-rows">
 							<td>
-								<span><img src="images/1-icon.png"></span>
+								<span><img src="images/7-icon.png"></span>
 								<span>No show</span>
 							</td>
 							<td>
