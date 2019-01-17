@@ -41,7 +41,7 @@
         }
         &--active {
             > div {
-                background: #ff9f00;
+                background: $darker_yellow;
                 color: #00226b;
                 border: none;
             }
@@ -155,7 +155,7 @@
             }
             .time {
                 font-family: 'Proximanova-semibold';
-                color: #00266b;
+                color: $darker_blue;
                 font-size: 19px;
                 text-transform: uppercase;
             }
@@ -249,7 +249,7 @@
     font-size: 0;
     margin-bottom: 30px;
     h2 {
-        color: #00266b;
+        color: $darker_blue;
         font-size: 22px;
         font-family: 'Sigvar-Serial-Regular';
     }
@@ -265,7 +265,7 @@
         .time {
             font-size: 24px;
             font-family: 'BakerSignetStd';
-            color: #00266b;
+            color: $darker_blue;
             text-transform: uppercase;
             margin: 0 0 8px;
         }
@@ -354,7 +354,7 @@
     max-width: 764px;
     h2 {
         font-size: 22px;
-        color: #00266b;
+        color: $darker_blue;
         font-family: 'Proximanova-rg';
         letter-spacing: 1px;
     }

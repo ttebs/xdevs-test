@@ -39,12 +39,13 @@ ul {
 }
 
 p {
-	line-height: 1;
-	font-size: 16px;
-	color: $gray;
+	color: #000;
+	font-family: 'Proximanova-rg';
+	line-height: 20px;
 }
 
 a {
+    text-decoration: none;
 	&.btn {
 		font-size: 12px;
 	    text-transform: uppercase;
@@ -55,7 +56,6 @@ a {
 	    display: inline-block;
 	    cursor: pointer;
         color: #fff;
-	    text-decoration: none;
 	    &--transparent {
 			color: #003087;
 	        background: transparent;
