@@ -372,7 +372,7 @@
             width: 33.333%;
             background: #dddddd;
             text-align: left;
-            padding-left: 25px;
+            padding-left: 16px;
             &:nth-child(2) {
                 background: #457a7c;
                 padding: 5px 0;
@@ -397,6 +397,7 @@
         }
         td {
             border-right: 1px solid #dddddd;
+            font-size: 0;
             p {
                 font-family: 'Proximanova-bold';
                 font-size: 13px;
@@ -407,9 +408,6 @@
                 }
             }
             img {
-                display: inline-block;
-                vertical-align: middle;
-                padding-left: 25px;
             }
             span {
                 font-family: 'Proximanova-rg';
@@ -417,6 +415,14 @@
                 color: #00226b;
                 display: inline-block;
                 vertical-align: middle;
+                width: 20%;
+                @include box-sizing(border-box);
+                img {
+                    margin: 0 auto;
+                }
+                &:last-child {
+                    width: 80%;
+                }
             }
         }
         tr {
