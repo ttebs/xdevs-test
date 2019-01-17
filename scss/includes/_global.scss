@@ -45,13 +45,30 @@ p {
 }
 
 a {
-    cursor: pointer;
-    color: $dark_blue;
-    text-decoration: none;
-
-    p & {
-        color: $gray;
-    }
+	&.btn {
+		font-size: 12px;
+	    text-transform: uppercase;
+	    padding: 12px 35px;
+	    position: relative;
+	    font-family: 'Proximanova-bold';
+	    border-radius: 3px;
+	    display: inline-block;
+	    cursor: pointer;
+        color: #fff;
+	    text-decoration: none;
+	    &--transparent {
+			color: #003087;
+	        background: transparent;
+	        top: 10px;
+	        border: 1px solid #003087;
+		}
+		&--light {
+            background: #566a8f;
+        }
+		&--dark {
+            background: #15223f;
+		}
+	}
 }
 
 article {

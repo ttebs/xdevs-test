@@ -346,19 +346,6 @@
             top: -15px;
             letter-spacing: 1px;
         }
-        a {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: #003087;
-            padding: 12px 35px;
-            background: transparent;
-            border: 1px solid #003087;
-            position: relative;
-            top: 10px;
-            font-family: 'Proximanova-bold';
-            border-radius: 3px;
-            display: inline-block;
-        }
     }
 }
 .section-table {
@@ -467,19 +454,6 @@
     &__btns {
         text-align: right;
         margin-top: 40px;
-        a {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: #fff;
-            padding: 12px 35px;
-            background: #15223f;
-            display: inline-block;
-            font-family: 'Proximanova-bold';
-            border-radius: 3px;
-            &.light {
-                background: #566a8f;
-            }
-        }
     }
 }
 footer {

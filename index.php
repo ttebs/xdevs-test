@@ -7,7 +7,6 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/media.css">
 	</head>
-
 	<body>
 		<div class="header-nav">
 			<div class="header-nav__pagination-container">
@@ -134,7 +133,7 @@
 						</div>
 						<div class="flights-all-info__width-20">
 							<p>economy super saver</p>
-							<a href="">Change</a>
+							<a href="#" class="btn btn--transparent">Change</a>
 						</div>
 					</div>
 				</div>
@@ -166,7 +165,7 @@
 						</div>
 						<div class="flights-all-info__width-20">
 							<p>economy lite</p>
-							<a href="">Change</a>
+							<a href="#" class="btn btn--transparent">Change</a>
 						</div>
 					</div>
 				</div>
@@ -279,8 +278,8 @@
 						</tr>
 					</table>
 					<div class="section-table__btns">
-						<a href="#" class="light">Secure fare</a>
-						<a href="#" class="dark">Proceed</a>
+						<a href="#" class="btn btn--light">Secure fare</a>
+						<a href="#" class="btn btn--dark">Proceed</a>
 					</div>
 				</div>
 			</div>
