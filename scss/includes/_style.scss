@@ -90,7 +90,6 @@
     &__header-text {
     	position: absolute;
     	bottom: 8px;
-    	width: 100%;
 	    margin: 0 auto;
         left: 0;
         right: 0;
@@ -108,7 +107,6 @@
 }
 .flight-info {
     font-size: 0;
-    width: 100%;
     margin: 0 auto;
     &__item {
         display: inline-block;
@@ -202,7 +200,6 @@
     background: #f7f7f7;
     padding-bottom: 70px;
     &__max-width {
-        width: 100%;
         margin: 0 auto;
         .edit-search {
             text-align: center;
@@ -458,9 +455,7 @@
 footer {
     .footer-nav {
         background: #fff;
-        width: 100%;
         padding: 33px 0;
-        width: 100%;
         margin: 0 auto;
         &__item {
             display: inline-block;
@@ -487,7 +482,6 @@ footer {
         }
     }
     .socials {
-        width: 100%;
         margin: 0 auto;
         font-size: 0;
         border-bottom: 1px solid #666;
@@ -547,7 +541,6 @@ footer {
         }
     }
     .copyright {
-        width: 100%;
         margin: 0 auto;
         font-size: 0;
         border-bottom: 1px solid #666;
