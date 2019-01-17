@@ -38,7 +38,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="header-nav__header-text">
+			<div class="header-nav__header-text maxwidth">
 				<span>SIN-SFO</span>
 				<span><img src="images/header-2-arrows.png"></span>
 				<span>SFO-SIN</span>
