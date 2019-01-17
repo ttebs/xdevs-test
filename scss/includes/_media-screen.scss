@@ -114,12 +114,11 @@
 
 	.flight-info__single_container {
 		border: none;
-	}
-
-	.flight-info__single_container div {
-		width: 33.3333%;
-		&:last-child {
-			text-align: right;
+		div {
+			width: 33.3333%;
+			&:last-child {
+				text-align: right;
+			}
 		}
 	}
 
@@ -130,27 +129,24 @@
 
 	.flights-all-info__width-80 {
 		width: 100%;
-	}
-
-	.flights-all-info__width-80 .left {
-	    width: 100%;
-	    > div {
-	    	width: 33.333%;
-	    	img {
-	    		margin: 0 auto;
-	    	}
-	    }
-	}
-
-	.flights-all-info__width-80 .right {
-	    width: 100%;
-	    text-align: left;
-		margin-top: 25px;
-	}
-
-	.flights-all-info__width-80 .left div:last-child {
-		padding-left: 0;
-		text-align: right;
+		.left {
+		    width: 100%;
+		    > div {
+		    	width: 33.333%;
+		    	img {
+		    		margin: 0 auto;
+		    	}
+		    }
+		    div:last-child {
+				padding-left: 0;
+				text-align: right;
+			}
+		}
+		.right {
+		    width: 100%;
+		    text-align: left;
+			margin-top: 25px;
+		}
 	}
 
 	.flights-all-info__width-20 {
@@ -162,11 +158,45 @@
 		}
 	}
 
+	.section-table__btns {
+	    text-align: center;
+	}
+
 	.section-table {
 		width: 100%;
 		max-width: none;
 		box-sizing: border-box;
 	}
+
+	footer .footer-nav__item {
+		width: 100%;
+		text-align: center;
+	}
+
+	footer .socials > div {
+	    display: block;
+	    vertical-align: top;
+	    width: 100%;
+	    text-align: center;
+	    margin-left: 0;
+	    margin-top: 12px;
+	}
+
+	footer .copyright img {
+	    right: 0;
+	    left: 0;
+	    margin: 0 auto;
+	}
+
+	footer .copyright {
+		text-align: center;
+	}
+
+	.header-nav__pagination-container > div {
+	    max-width: none;
+	    width: 90%;
+	}
+
 }
 
 
@@ -174,6 +204,40 @@
 /* ================================================ 600 ==================================================== */
 
 @media only screen and (max-width: 600px) {
+
+	.maxwidth {
+    	width: 90%;
+	}
+	.header-nav__header-text span {
+		font-size: 12px;
+	}
+	.section-table {
+		table {
+			th {
+				font-size: 12px;
+				padding-left: 6px;
+				p {
+					font-size: 12px;
+				}
+			}
+			td span {
+			    font-size: 12px;
+			    &:last-child {
+				width: 80%;
+			    padding-left: 10px;
+			    img {
+				    margin: 0 auto;
+					width: 100%;
+					padding: 0 5px;
+					max-width: 20px;
+					}
+			    }
+			}
+			tr.merge td {
+			    padding: 0 10px 10px;
+			}
+		}
+	}
 }
 
 
